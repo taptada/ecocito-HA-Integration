@@ -1,0 +1,8 @@
+{
+  "name": "Ecocito",
+  "content_in_root": false,
+  "domains": ["ecocito"],
+  "country": ["FR"],
+  "homeassistant": "2024.4.0",
+  "render_readme": true
+}
