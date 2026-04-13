@@ -1,0 +1,87 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "title": "Configurer Ecocito",
+          "description": "Saisissez vos identifiants Ecocito et choisissez les valeurs à remonter.",
+          "data": {
+            "cc": "Code collectivité",
+            "username": "Identifiant",
+            "password": "Mot de passe",
+            "selected_sensors": "Valeurs à remonter"
+          }
+        },
+        "reconfigure": {
+          "title": "Reconfigurer Ecocito",
+          "description": "Modifiez le code collectivité, l'identifiant ou le mot de passe.",
+          "data": {
+            "cc": "Code collectivité",
+            "username": "Identifiant",
+            "password": "Mot de passe"
+          }
+        }
+      },
+      "error": {
+        "cannot_connect": "Connexion impossible",
+        "no_sensor_selected": "Sélectionnez au moins une valeur"
+      },
+      "abort": {
+        "already_configured": "Cette configuration existe déjà",
+        "reconfigure_successful": "Reconfiguration effectuée"
+      }
+    },
+    "options": {
+      "step": {
+        "init": {
+          "title": "Options Ecocito",
+          "description": "Choisissez les valeurs à remonter.",
+          "data": {
+            "selected_sensors": "Valeurs à remonter"
+          }
+        }
+      },
+      "error": {
+        "no_sensor_selected": "Sélectionnez au moins une valeur"
+      }
+    },
+    "entity": {
+      "sensor": {
+        "collecte_total": {
+          "name": "Collecte total"
+        },
+        "collecte_dechets_menager": {
+          "name": "Collecte déchets ménagers"
+        },
+        "collecte_tri_selectif": {
+          "name": "Collecte tri sélectif"
+        },
+        "collecte_dechets_vert": {
+          "name": "Collecte déchets verts"
+        },
+        "collecte_bio_dechets": {
+          "name": "Collecte bio déchets"
+        },
+        "collecte_verre": {
+          "name": "Collecte verre"
+        },
+        "pav_total": {
+          "name": "PAV total"
+        },
+        "pav_dechets_menager": {
+          "name": "PAV déchets ménagers"
+        },
+        "pav_tri_selectif": {
+          "name": "PAV tri sélectif"
+        },
+        "pav_dechets_vert": {
+          "name": "PAV déchets verts"
+        },
+        "pav_bio_dechets": {
+          "name": "PAV bio déchets"
+        },
+        "pav_verre": {
+          "name": "PAV verre"
+        }
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+{
+    "domain": "ecocito",
+    "name": "Ecocito",
+    "version": "0.1.0",
+    "documentation": "https://github.com/taptada/ecocito-HA-Integration",
+    "requirements": [],
+    "config_flow": true,
+    "codeowners": ["@taptada"],
+    "iot_class": "cloud_polling",
+    "loggers": ["custom_components.ecocito"]
+  }
