@@ -78,8 +78,15 @@ class EcocitoSensor(CoordinatorEntity[EcocitoCoordinator], SensorEntity):
     self.entity_description = description
     self._entry = entry
 
-    self._attr_unique_id = f"{entry.entry_id}_{description.key}"
+    cc = entry.data["cc"]
 
+    self._attr_device_info = {
+      "identifiers": {("ecocito", cc)},
+      "name": f"Ecocito {cc}",
+      "manufacturer": "Ecocito",
+    }
+
+    self._attr_unique_id = f"ecocito_{cc}_{description.key}"
   @property
   def native_value(self) -> int | None:
     """Return the current sensor value."""
