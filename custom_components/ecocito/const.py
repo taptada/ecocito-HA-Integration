@@ -19,6 +19,7 @@ MATIERE_ALL = -1
 
 SERVICE_PAV = "ObtenirStatistiqueApportPAVMensuel"
 SERVICE_COLLECTE = "ObtenirStatistiqueLeveesMensuel"
+SERVICE_APPORT = "ObtenirStatistiqueApportsMensuel"
 
 LOGIN_PATH = "/Usager/Profil/Connexion"
 BASE_URL = (
@@ -114,6 +115,15 @@ SENSOR_DEFINITIONS: dict[str, dict] = {
     "icon": "mdi:glass-fragile",
     "service": SERVICE_PAV,
     "matiere": MATIERE_VERRE,
+    "unit": "apports",
+  },
+
+  # Apport
+  "apport_total": {
+    "name": "Apport total",
+    "icon": "mdi:trash-can-outline",
+    "service": SERVICE_APPORT,
+    "matiere": MATIERE_ALL,
     "unit": "apports",
   },
 }
