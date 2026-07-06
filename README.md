@@ -1,6 +1,6 @@
 # Description
 
-Intégration Home Assistant pour récupérer les statistiques Ecocito et exposer des capteurs pour les services de collecte et de points d'apports volontaires (PAV).
+Intégration Home Assistant pour récupérer les statistiques Ecocito et exposer des capteurs pour les services de collecte, de points d'apports volontaires (PAV) et apport en déchèterie.
 
 Je ne peux tester que sur un sous ensemble des données, PR bienvenues
 
@@ -11,6 +11,7 @@ Je ne peux tester que sur un sous ensemble des données, PR bienvenues
 - Support des données :
   - Collecte
   - PAV
+  - Apport
 - Choix des capteurs à créer lors de la configuration
 - Modification des capteurs exposés via les options
 - Reconfiguration du code collectivité, de l'identifiant et du mot de passe sans supprimer l'intégration
@@ -34,6 +35,10 @@ Je ne peux tester que sur un sous ensemble des données, PR bienvenues
 - Déchets verts
 - Bio déchets
 - Verre
+
+### Apport
+
+- Total
 
 Les valeurs exposées correspondent à des compteurs annuels. Elles repartent à zéro au 1er janvier.
 
@@ -60,6 +65,7 @@ L'arborescence doit ressembler à ceci :
 config/
   custom_components/
     ecocito/
+      brand
       __init__.py
       manifest.json
       const.py
